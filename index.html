@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Important for mobile scaling -->
   <title>Bernhardt Welcome Scavenger Hunt 🎉</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-purple-200 via-pink-200 to-blue-200 flex flex-col items-center p-4 min-h-screen font-sans">
 
-  <h1 class="text-3xl font-bold text-purple-800 mb-6 text-center drop-shadow-lg">🎉 Bernhardt College Welcome Scavenger Hunt 🎉</h1>
+  <!-- Title -->
+  <h1 class="text-2xl sm:text-3xl font-bold text-purple-800 mb-6 text-center drop-shadow-lg leading-snug">
+    🎉 Bernhardt College Welcome Scavenger Hunt 🎉
+  </h1>
 
   <!-- Instructions -->
-  <div class="bg-white bg-opacity-80 backdrop-blur-sm p-4 rounded-2xl shadow-md w-full sm:w-11/12 mb-6">
-    <h2 class="text-xl font-semibold mb-3 text-purple-700">How to Play</h2>
+  <div class="bg-white bg-opacity-80 backdrop-blur-sm p-4 rounded-2xl shadow-md w-full max-w-lg mb-6">
+    <h2 class="text-lg sm:text-xl font-semibold mb-3 text-purple-700">How to Play</h2>
     <ol class="list-decimal pl-5 space-y-1 text-sm sm:text-base text-gray-800">
       <li>Check the tasks you have completed.</li>
       <li>Click <b>Submit Proof</b> → You will be redirected to a Google Form.</li>
@@ -20,50 +24,51 @@
     </ol>
   </div>
 
-  <!-- Mobile-friendly Task Checklist -->
-  <div class="bg-white bg-opacity-80 backdrop-blur-sm p-4 rounded-2xl shadow-md w-full sm:w-11/12 space-y-3">
+  <!-- Task Checklist -->
+  <div class="bg-white bg-opacity-80 backdrop-blur-sm p-4 rounded-2xl shadow-md w-full max-w-lg space-y-3">
 
     <!-- Task 1 -->
-    <label class="flex items-center p-4 bg-purple-50 rounded-xl shadow-sm cursor-pointer hover:bg-purple-100 w-full transition-colors duration-200">
-      <input type="checkbox" class="mr-4 w-8 h-8">
-      <span class="text-base sm:text-lg text-purple-800">📸 Take a selfie with a senior</span>
+    <label class="flex items-center gap-3 p-4 bg-purple-50 rounded-xl shadow-sm cursor-pointer hover:bg-purple-100 transition-colors duration-200">
+      <input type="checkbox" class="w-6 h-6 accent-purple-600">
+      <span class="text-sm sm:text-base text-purple-800">📸 Take a selfie with a senior</span>
     </label>
 
     <!-- Task 2 -->
-    <label class="flex items-center p-4 bg-pink-50 rounded-xl shadow-sm cursor-pointer hover:bg-pink-100 w-full transition-colors duration-200">
-      <input type="checkbox" class="mr-4 w-8 h-8">
-      <span class="text-base sm:text-lg text-pink-800">🏫 Take a photo of the college logo</span>
+    <label class="flex items-center gap-3 p-4 bg-pink-50 rounded-xl shadow-sm cursor-pointer hover:bg-pink-100 transition-colors duration-200">
+      <input type="checkbox" class="w-6 h-6 accent-pink-600">
+      <span class="text-sm sm:text-base text-pink-800">🏫 Take a photo of the college logo</span>
     </label>
 
     <!-- Task 3 -->
-    <label class="flex items-center p-4 bg-blue-50 rounded-xl shadow-sm cursor-pointer hover:bg-blue-100 w-full transition-colors duration-200">
-      <input type="checkbox" class="mr-4 w-8 h-8">
-      <span class="text-base sm:text-lg text-blue-800">▶️ Make a 5-sec reel about BernHardt</span>
+    <label class="flex items-center gap-3 p-4 bg-blue-50 rounded-xl shadow-sm cursor-pointer hover:bg-blue-100 transition-colors duration-200">
+      <input type="checkbox" class="w-6 h-6 accent-blue-600">
+      <span class="text-sm sm:text-base text-blue-800">▶️ Make a 5-sec reel about BernHardt</span>
     </label>
 
     <!-- Task 4 -->
-    <label class="flex items-center p-4 bg-green-50 rounded-xl shadow-sm cursor-pointer hover:bg-green-100 w-full transition-colors duration-200">
-      <input type="checkbox" class="mr-4 w-8 h-8">
-      <span class="text-base sm:text-lg text-green-800">📸 Take selfie with 2 new friends</span>
+    <label class="flex items-center gap-3 p-4 bg-green-50 rounded-xl shadow-sm cursor-pointer hover:bg-green-100 transition-colors duration-200">
+      <input type="checkbox" class="w-6 h-6 accent-green-600">
+      <span class="text-sm sm:text-base text-green-800">📸 Take selfie with 2 new friends</span>
     </label>
 
     <!-- Task 5 -->
-    <label class="flex items-center p-4 bg-yellow-50 rounded-xl shadow-sm cursor-pointer hover:bg-yellow-100 w-full transition-colors duration-200">
-      <input type="checkbox" class="mr-4 w-8 h-8">
-      <span class="text-base sm:text-lg text-yellow-800">✍️ Write the name of principal of our college</span>
+    <label class="flex items-center gap-3 p-4 bg-yellow-50 rounded-xl shadow-sm cursor-pointer hover:bg-yellow-100 transition-colors duration-200">
+      <input type="checkbox" class="w-6 h-6 accent-yellow-600">
+      <span class="text-sm sm:text-base text-yellow-800">✍️ Write the name of principal of our college</span>
     </label>
 
-    <!-- Single Submit Button -->
-    <a href="https://forms.gle/GXjxnz5mwBpU1TwPA" target="_blank" class="bg-purple-600 text-white px-4 py-3 mt-4 inline-block rounded-xl w-full text-center hover:bg-purple-700 text-base sm:text-lg transition-colors duration-200 shadow-md">Submit Proof</a>
+    <!-- Submit Button -->
+    <a href="https://forms.gle/GXjxnz5mwBpU1TwPA" target="_blank"
+       class="bg-purple-600 text-white px-4 py-3 mt-2 inline-block rounded-xl w-full text-center hover:bg-purple-700 text-base sm:text-lg transition-colors duration-200 shadow-md">
+       Submit Proof
+    </a>
 
   </div>
 
   <!-- Footer -->
-  <footer class="mt-6 text-gray-800 text-xs sm:text-sm text-center">
+  <footer class="mt-6 text-gray-700 text-xs sm:text-sm text-center">
     Hosted for free using GitHub Pages / Netlify. All proofs collected via Google Forms.
   </footer>
 
 </body>
 </html>
-
-
