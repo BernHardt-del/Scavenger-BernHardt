@@ -5,10 +5,12 @@
   <title>Bernhardt Welcome Scavenger Hunt 🎉</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-purple-200 via-pink-200 to-blue-200 flex flex-col items-center min-h-screen p-4 font-sans">
+<body class="bg-gradient-to-br from-purple-200 via-pink-200 to-blue-200 flex flex-col items-center p-4 min-h-screen font-sans">
 
-  <!-- Instructions container -->
-  <div class="bg-white bg-opacity-80 backdrop-blur-sm p-5 rounded-2xl shadow-md w-full max-w-md mb-6">
+  <h1 class="text-3xl font-bold text-purple-800 mb-6 text-center drop-shadow-lg">🎉 Bernhardt College Welcome Scavenger Hunt 🎉</h1>
+
+  <!-- Instructions -->
+  <div class="bg-white bg-opacity-80 backdrop-blur-sm p-4 rounded-2xl shadow-md w-full sm:w-11/12 mb-6">
     <h2 class="text-xl font-semibold mb-3 text-purple-700">How to Play</h2>
     <ol class="list-decimal pl-5 space-y-1 text-sm sm:text-base text-gray-800">
       <li>Check the tasks you have completed.</li>
@@ -18,9 +20,9 @@
     </ol>
   </div>
 
-  <!-- Task Checklist container -->
-  <div class="bg-white bg-opacity-80 backdrop-blur-sm p-5 rounded-2xl shadow-md w-full max-w-md space-y-3">
-    
+  <!-- Mobile-friendly Task Checklist -->
+  <div class="bg-white bg-opacity-80 backdrop-blur-sm p-4 rounded-2xl shadow-md w-full sm:w-11/12 space-y-3">
+
     <!-- Task 1 -->
     <label class="flex items-center p-4 bg-purple-50 rounded-xl shadow-sm cursor-pointer hover:bg-purple-100 w-full transition-colors duration-200">
       <input type="checkbox" class="mr-4 w-8 h-8">
@@ -42,7 +44,7 @@
     <!-- Task 4 -->
     <label class="flex items-center p-4 bg-green-50 rounded-xl shadow-sm cursor-pointer hover:bg-green-100 w-full transition-colors duration-200">
       <input type="checkbox" class="mr-4 w-8 h-8">
-      <span class="text-base sm:text-lg text-green-800">📸 Take selfie with 2 new friends</span>
+      <span class="text-base sm:text-lg text-green-800📸 Take selfie with 2 new friends</span>
     </label>
 
     <!-- Task 5 -->
@@ -52,9 +54,15 @@
     </label>
 
     <!-- Single Submit Button -->
-    <a href="https://forms.gle/cHBugcWfipasi9ESA" target="_blank" class="bg-purple-600 text-white px-4 py-3 mt-4 inline-block rounded-xl w-full text-center hover:bg-purple-700 text-base sm:text-lg transition-colors duration-200 shadow-md">Submit Proof</a>
+    <a href="https://forms.gle/GXjxnz5mwBpU1TwPA" target="_blank" class="bg-purple-600 text-white px-4 py-3 mt-4 inline-block rounded-xl w-full text-center hover:bg-purple-700 text-base sm:text-lg transition-colors duration-200 shadow-md">Submit Proof</a>
 
   </div>
+
+  <!-- Footer -->
+  <footer class="mt-6 text-gray-800 text-xs sm:text-sm text-center">
+    Hosted for free using GitHub Pages / Netlify. All proofs collected via Google Forms.
+  </footer>
+
 </body>
 </html>
 
